@@ -39,7 +39,6 @@
 		F6574C381D7CFAF2009569D8 /* SwiftImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6574C371D7CFAF2009569D8 /* SwiftImageController.swift */; };
 		F66C50951DCA83AF00A7E921 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C50941DCA83AF00A7E921 /* ImageCollectionViewCell.m */; };
 		F66C50991DCA840800A7E921 /* PageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C50981DCA840800A7E921 /* PageControlViewController.m */; };
-		F671E8DA1DBE77E000E8E355 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F63E3B811D5942A10031F013 /* Info.plist */; };
 		F6772690215C3EAF00C45E0C /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677268F215C3EAF00C45E0C /* CustomAlertView.swift */; };
 		F6772691215C3EB400C45E0C /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677268F215C3EAF00C45E0C /* CustomAlertView.swift */; };
 		F6772693215C3ED800C45E0C /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6772692215C3ED800C45E0C /* CustomAlertView.xib */; };
@@ -81,7 +80,6 @@
 		F6C4822520C5F64700B0E70D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63E3B7E1D5942A10031F013 /* LaunchScreen.storyboard */; };
 		F6C4822620C5F64700B0E70D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63E3B7C1D5942A10031F013 /* Assets.xcassets */; };
 		F6C4822720C5F64700B0E70D /* watson.png in Resources */ = {isa = PBXBuildFile; fileRef = F64DE3BF1D5A77E100C73886 /* watson.png */; };
-		F6C4822820C5F64700B0E70D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F63E3B811D5942A10031F013 /* Info.plist */; };
 		F6C4822920C5F64700B0E70D /* ChestDrawer.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8661DCA928100E039A6 /* ChestDrawer.png */; };
 		F6C4822A20C5F64700B0E70D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63E3B791D5942A10031F013 /* Main.storyboard */; };
 		F6C4823F20C5FDB800B0E70D /* TLFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6C4823D20C5FDB800B0E70D /* TLFResources.bundle */; };
@@ -366,13 +364,13 @@
 		F63E3B651D5942A10031F013 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CanNMobile;
 				TargetAttributes = {
 					F63E3B6C1D5942A10031F013 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = PP64RT7P8Z;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 					};
 					F6C4820220C5F64700B0E70D = {
 						DevelopmentTeam = PP64RT7P8Z;
@@ -413,7 +411,6 @@
 				F63E3B801D5942A10031F013 /* LaunchScreen.storyboard in Resources */,
 				F63E3B7D1D5942A10031F013 /* Assets.xcassets in Resources */,
 				F64DE3C01D5A77E100C73886 /* watson.png in Resources */,
-				F671E8DA1DBE77E000E8E355 /* Info.plist in Resources */,
 				F68FB86A1DCA928100E039A6 /* ChestDrawer.png in Resources */,
 				F63E3B7B1D5942A10031F013 /* Main.storyboard in Resources */,
 			);
@@ -433,7 +430,6 @@
 				F6C4822520C5F64700B0E70D /* LaunchScreen.storyboard in Resources */,
 				F6C4822620C5F64700B0E70D /* Assets.xcassets in Resources */,
 				F6C4822720C5F64700B0E70D /* watson.png in Resources */,
-				F6C4822820C5F64700B0E70D /* Info.plist in Resources */,
 				F6C4822920C5F64700B0E70D /* ChestDrawer.png in Resources */,
 				F6C4822A20C5F64700B0E70D /* Main.storyboard in Resources */,
 				F6C4823F20C5FDB800B0E70D /* TLFResources.bundle in Resources */,
@@ -584,14 +580,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -635,14 +639,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -705,7 +717,8 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSControls/iOSControls-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -741,7 +754,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSControls/iOSControls-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
