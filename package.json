@@ -1,0 +1,14 @@
+{
+  "name": "ioscontrols_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ReportGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^0.3.7"
+  }
+}
