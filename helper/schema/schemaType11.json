@@ -1,0 +1,134 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 11 Schema",
+    "description": "Required key/value pairs for message type 11",
+    "type": "object",
+    "properties": {
+        "offset": {
+            "description": "Offset in milliseconds from start of stream",
+            "type": "integer",
+            "minimum": 0
+        },
+        "screenviewOffset": {
+            "description": "Offset in milliseconds from start of application context",
+            "type": "integer",
+            "minimum": 0
+        },
+        "count": {
+            "description": "Number of messages being sent",
+            "type": "integer",
+            "minimum": 1
+        },
+        "fromWeb": {
+            "description": "Identifies if message is from web or other native application",
+            "type": "boolean"
+        },
+        "type": {
+            "description": "Message header type",
+            "type": "integer",
+            "enum": [11]
+        },
+        "velocityX": {
+        	"type": "Float"
+        },
+        "velocityY": {
+        	"type": "Float"
+        },
+         "direction": {
+        	"type": "string"
+        },
+        "event": {
+            "type": "object",
+            "properties": {
+                "type": {
+                	"description": "classname of control",
+                    "type": "string"
+                },
+                "tlEvent": {
+                    "description": "tlEvent type",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type",
+                "tlEvent"
+            ],
+            "additionalProperties": false
+        },
+        "touches": {
+            "type": "array",
+            "items": {
+                "direction": {
+                    "type": "string"
+                },
+                "position": {
+                    "x": "integer",
+                    "y": "integer"
+                },
+                "control": {
+                    "type": "array",
+                    "items": {
+                        "properties": {
+                            "position": {
+                                "properties": {
+                                    "width": {
+                                        "type": "integer"
+                                    },
+                                    "height": {
+                                        "type": "integer"
+                                    },
+                                    "relXY": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "required": [
+                                    "width",
+                                    "relXY",
+                                    "height"
+                                ],
+                                "additionalProperties": false
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "type": {
+                                "type": "string"
+                            },
+                            "subType": {
+                                "type": "string"
+                            },
+                            "tlType": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                        	"direction",
+                            "position",
+                            "control",
+                            "id",
+                            "type",
+                            "tlType",
+                            "subType"
+                        ],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "required": [
+                "position",
+                "control"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "offset",
+        "screenviewOffset",
+        "count",
+        "fromWeb",
+        "type",
+        "touches",
+        "event"
+    ],
+    "additionalProperties": false
+}

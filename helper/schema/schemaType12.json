@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 12 Schema",
+    "description": "Required key/value pairs for message type 12",
+    "type": "object",
+    "properties": {
+        "offset": {
+            "description": "Offset in milliseconds from start of stream",
+            "type": "integer",
+             "minimum": 0
+        },
+        "screenviewOffset": {
+            "description": "Offset in milliseconds from start of application context",
+            "type": "integer",
+            "minimum": 0
+        },
+        "count": {
+            "description": "Number of messages being sent",
+            "type": "integer",
+            "minimum": 1
+        },
+        "fromWeb": {
+            "description": "Identifies if message is from web or other native application",
+            "type": "boolean"
+        },
+        "type": {
+            "description": "Message header type",
+            "type": "integer",
+            "enum": [12]
+        },
+        "domCapture": {
+            "description": "html page being loaded into webView",
+            "type": "object",
+            "properties": {
+                "root": {
+                    "description": "html docType",
+                    "type": "string"
+                },
+                "charset": {
+                    "description": "encoding",
+                    "type": "string"
+                },
+                "canvas": {},
+                "dcid": {
+                    "description": "unique dom identification",
+                    "type": "string"
+                },
+                "frames":{}
+            },
+            "required": [
+                "root",
+                "dcid",
+                "charset"
+            ],
+            "additionalProperties": true
+        }
+    },
+    "required": [
+        "offset",
+        "screenviewOffset",
+        "count",
+        "fromWeb",
+        "type",
+        "domCapture"
+    ],
+    "additionalProperties": false
+}

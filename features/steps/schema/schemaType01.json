@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Type 1 Schema",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Message header type",
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    },
+    "offset": {
+      "description": "Offset in milliseconds from start of stream",
+      "type": "integer",
+      "minimum": 0
+    },
+    "screenviewOffset": {
+      "description": "Offset in milliseconds from start of application context",
+      "type": "integer",
+      "minimum": 0
+    },
+    "fromWeb": {
+      "description": "Identifies if message is from web or other native application",
+      "type": "boolean"
+    },
+    "count": {
+      "description": "Number of messages being sent",
+      "type": "integer",
+      "minimum": 1
+    },
+    "mobileState": {
+      "type": "object",
+      "properties": {
+        "carrier": {
+          "type": "string"
+        },
+        "battery": {
+          "description": "Battery level from 0 to 100",
+          "type": "number",
+          "format": "double",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "androidState": {
+          "description": "Current state in an Android device",
+          "type": "object",
+          "properties": {
+            "keyboardState": {
+              "title": "Current keyboard state",
+              "type": "string"
+            }
+          },
+          "required": [
+            "keyboardState"
+          ],
+          "additionalProperties": false
+        },
+        "freeMemory": {
+          "type": "integer"
+        },
+        "freeStorage": {
+          "type": "integer"
+        },
+        "connectionType": {
+          "type": "string"
+        },
+        "networkReachability": {
+          "type": "string"
+        },
+        "ip": {
+          "type": "string"
+        },
+        "pageOrientation": {
+          "description": "Current orentation of displaying page",
+          "type": "number"
+        },
+        "orientation": {
+          "description": "Current orentation of device",
+          "type": "number"
+        }
+      },
+      "required": [
+        "carrier",
+        "pageOrientation",
+        "ip",
+        "networkReachability",
+        "connectionType",
+        "freeMemory",
+        "freeStorage"
+      ],
+      "additionalProperties": false
+    },
+    "clientState": {
+      "description": "Logical web page being loaded for UIC",
+      "type": "object",
+      "properties": {
+        "pageWidth": {
+          "title": "Width of the document of the web page",
+          "type": "integer"
+        },
+        "pageHeight": {
+          "title": "Height of the document of the web page",
+          "type": "integer"
+        },
+        "viewPortWidth": {
+          "title": "Width of viewport",
+          "type": "integer"
+        },
+        "viewPortHeight": {
+          "title": "Height of viewport",
+          "type": "integer"
+        },
+        "viewPortX": {
+          "title": "x position of scrollbar on viewport",
+          "type": "integer"
+        },
+        "viewPortY": {
+          "title": "y position of scrollbar on viewport",
+          "type": "integer"
+        },
+        "event": {
+          "title": "event that triggered the client state",
+          "type": "string"
+        },
+        "viewTime": {
+          "title": "time in milliseconds user was on the event triggered",
+          "type": "integer"
+        },
+        "viewPortXStart": {
+          "title": "initial start x position of scrollbar on viewport",
+          "type": "integer"
+        },
+        "viewPortYStart": {
+          "title": "initial start y position of scrollbar on viewport",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "event"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "type",
+    "offset",
+    "screenviewOffset",
+    "fromWeb",
+    "count",
+    "mobileState",
+    "clientState"
+  ],
+  "additionalProperties": false
+}

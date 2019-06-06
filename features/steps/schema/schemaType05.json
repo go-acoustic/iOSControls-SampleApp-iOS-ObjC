@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 5 Schema",
+    "type": "object",
+    "required": ["type", "offset", "screenviewOffset", "fromWeb", "count", "customEvent"],
+    "properties": {
+        "type": {
+            "type": "integer",
+            "enum": [5]
+        },
+        "offset": {
+            "type": "integer"
+        },
+        "screenviewOffset": {
+            "type": "integer"
+        },
+        "fromWeb": {
+            "type": "boolean"
+        },
+        "count": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "customEvent": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "object",
+                    "required": ["value"],
+                    "properties": {
+                        "value": {
+                            "type": ["object", "string"],
+                            "additionalProperties": true
+                        }
+
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

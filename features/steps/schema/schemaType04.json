@@ -1,0 +1,221 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 4 Schema",
+    "description": "Required key/value pairs for message type 4",
+    "type": "object",
+    "properties": {
+        "offset": {
+            "description": "Offset in milliseconds from start of stream",
+            "type": "integer",
+            "minimum": 0
+        },
+        "screenviewOffset": {
+            "description": "Offset in milliseconds from start of application context",
+            "type": "integer",
+            "minimum": 0
+        },
+         "focusInOffset": {
+            "description": "Offset in milliseconds from start of current json session",
+            "type": "integer",
+            "minimum": 0
+        },
+        "count": {
+            "description": "Number of messages being sent",
+            "type": "integer",
+            "minimum": 1
+        },
+        "fromWeb": {
+            "description": "Identifies if message is from web or other native application",
+            "type": "boolean"
+        },
+        "type": {
+            "description": "Message header type",
+            "type": "integer",
+            "enum": [4]
+        },
+        "target": {
+           "description": "The control being logged",
+            "type": "object",
+            "properties": {
+                "position": {
+                    "type": "object",
+                    "properties": {
+                        "x": {
+                            "type": "integer"
+                        },
+                        "y": {
+                            "type": "integer"
+                        },
+                        "height": {
+                            "type": "integer"
+                        },
+                        "width": {
+                            "type": "integer"
+                        },
+                        "relXY": {
+                            "type": "String"
+                        }
+                    },
+                    "required": [
+                        "x",
+                        "y",
+                        "height",
+                        "width"
+                    ],
+                    "additionalProperties": false
+                },
+                "id": {
+                    "type": "string"
+                },
+                "idType": {
+                    "type": "integer"
+                },
+                "dwell": {
+                    "description": "Dwell Time",
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "subType": {
+                    "type": "string"
+                },
+                "tlType": {
+                    "description": "tlType of control that normalizes the control type for eventing",
+                    "type": "string"
+                },
+                "visitedCount": {
+                	"description": "the number of times current control has been used",
+                    "type": "integer"
+                },
+                "style": {
+                	"descrption": "UI style",
+                    "type": "object",
+                    "properties": {
+                        "textAlign": {
+                        	"type": "string"
+                        },
+                        "textBGColor": {
+                            "type": "integer"
+                        },
+                        "textColor": {
+                            "type": "integer"
+                        },
+                        "textAlphaColor": {
+                            "type": "integer"
+                        },
+                        "hidden": {
+                            "type": "boolean"
+                        },
+                        "bgColor": {
+                            "type": "integer"
+                        },
+                        "bgAlphaColor": {
+                            "type": "integer"
+                        },
+                         "alphaBGColor": {
+                            "type": "integer"
+                        },
+                         "textBGAlphaColor": {
+                            "type": "integer"
+                        },
+                         "paddingTop": {
+                            "type": "integer"
+                        },
+                         "paddingLeft": {
+                            "type": "integer"
+                        },
+                         "paddingBottom": {
+                            "type": "integer"
+                        },
+                         "paddingRight": {
+                          "type": "integer"
+                        }
+                    },
+                    "required": [
+                    ],
+                    "additionalProperties": false
+                },
+                "currState": {
+                    "descrption": "Current state of control",
+                    "type": "object",
+                    "properties": {
+                        "isSelected": {
+                        	"type": "boolean"
+                        },
+                        "text": {
+                            "type": "string"
+                        },
+                        "focusInOffset": {
+                        	"type": "integer"
+                        },
+                        "font": {
+                        	"name": {
+                        		"type": "string"
+                        	},
+                        	"size": {
+                        		"type": "integer"
+                        	}            	
+                        },
+                        "x": {
+                          "type": "string"
+                        },
+                        "y": {
+                          "type": "string"
+                        }
+                    },
+                    "required": [
+                    ],
+                    "additionalProperties": false
+                },
+                "prevState": {
+                    "description": "Previous state of control",
+                    "type": "object",
+                    "properties": {
+                       "isSelected": {
+                        	"type": "boolean"
+                        },
+                        "text": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "required": [
+                "position",
+                "id",
+                "type",
+                "tlType"
+            ],
+            "additionalProperties": false
+        },
+        "event": {
+            "type": "object",
+            "properties": {
+                "type": {
+                	"description": "classname of control",
+                    "type": "string"
+                },
+                "tlEvent": {
+                    "description": "tlEvent type",
+                    "type": "string"
+                }
+            },
+            "required": [
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "offset",
+        "screenviewOffset",
+        "count",
+        "fromWeb",
+        "type",
+        "event"
+    ],
+    "additionalProperties": false
+}

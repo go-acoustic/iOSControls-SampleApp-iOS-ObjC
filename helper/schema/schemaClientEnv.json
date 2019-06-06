@@ -1,0 +1,151 @@
+{
+  "$ref" : "MessageHeader",
+  "osVersion": {
+    "title": "Operating system version",
+    "type": "string"
+  },
+  "orientation": {
+    "title": "Initial session orientation of the screen",
+    "type": "integer which can be 0, 90, 180 or -90"
+  },
+  "height": {
+    "title": "Initial session height of display/viewport divided by pixel density",
+    "type": "integer"
+  },
+  "width": {
+    "title": "Initial session width of display/viewport divided by pixel density",
+    "type": "integer"
+  },
+  "deviceHeight": {
+    "title": "Initial session device height of display/viewport",
+    "type": "integer"
+  },
+  "deviceWidth": {
+    "title": "Initial session device width of display/viewport",
+    "type": "integer"
+  },
+  "pixelDensity": {
+    "title": "Pixel density of the device",
+    "type": "integer"
+  },
+  "osType": {
+    "title": "Operating system of device iOS or Android",
+    "type": "string"
+  },
+  "mobileEnvironment": {
+    "description": "Logical page being loaded",
+    "type": "object",
+    "properties": {
+      "appName": {
+        "title": "Application name",
+        "type": "string"
+      },
+      "android": {
+        "description": "Current state in an Android device",
+        "type": "object",
+        "properties": {
+          "brand": {
+            "title": "The brand (e.g., carrier) the software is customized for, if any",
+            "type": "string"
+          },
+          "fingerPrint": {
+            "title": "A string that uniquely identifies this build",
+            "type": "string"
+          },
+          "keyboardType": {
+            "title": "Keyboard type",
+            "type": [ {
+              "enum": [0],
+              "description": "TWELVE_KEYS",
+              "enum": [1],
+              "description": "NO_KEYS",
+              "enum": [2],
+              "description": "QWERTY",
+              "enum": [3],
+              "description": "UNDEFINED"
+              }]
+          }
+        }
+      },
+      "totalMemory": {
+        "title": "Total memory in MBytes of device",
+        "type": "number"
+      },
+      "totalStorage": {
+        "title": "Total storage in MBytes of device",
+        "type": "number"
+      },
+      "orientationType": {
+        "title": "Orientation type of device",
+        "type": [ {
+          "description": "LANDSCAPE",
+          "description": "PORTRAIT",
+          "description": "SQUARE",
+          "description": "UNDEFINED"
+          }]
+      },
+      "appVersion": {
+        "title": "Version of application",
+        "type": "string"
+      },
+      "manufacturer": {
+        "title": "Manufacturer of device",
+        "type": "string"
+      },
+      "userId": {
+        "title": "User of device",
+        "type": "string"
+      },
+      "advertisingId": {
+        "title": "Advertising id from device if used, otherwise value is N/A",
+        "type": "string"
+      },
+      "locale": {
+        "title": "The user's preferred locale",
+        "type": "string"
+      },
+      "deviceModel": {
+        "title": "Device model",
+        "type": "string"
+      },
+      "language": {
+        "title": "Device's language",
+        "type": "string"
+      }
+    },
+    "additionalProperties" : false
+  },
+  "webEnvironment": {
+  "description": "Web page being loaded",
+  "type": "object",
+  "properties": {
+    "libVersion": {
+      "title": "Library version",
+      "type": "string"
+    },
+    "screen": {
+      "description": "Display of the web content",
+      "type": "object",
+      "properties": {
+        "orientation": {
+          "title": "Initial session orientation of the screen",
+          "type": "integer which can be 0, 90, 180 or -90"
+        },
+        "orientationMode": {
+          "title": "To indicate orientation mode.",
+          "type": "string which can be Portrait or Landscape"
+        }
+      }
+    },
+    "page": {
+      "title": "Url of the page",
+      "type": "string"
+    },
+    "referrer": {
+      "title": "Referrer URL (if any) of the page.",
+      "type": "string"
+    }
+  },
+  "additionalProperties" : false
+  }
+}
