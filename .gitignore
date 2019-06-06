@@ -6,3 +6,7 @@
 **/bin
 **/build
 /Pods
+/Pods/IBMTealeaf/README.md
+/Pods/EOCore/README.md
+/Pods/IBMTealeaf
+/Pods/EOCore
