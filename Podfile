@@ -9,4 +9,5 @@ target 'iOSControls' do
   pod 'IBMTealeaf'
   # Pods for iOSControls
 
+  pod 'Calabash'
 end
