@@ -1,6 +1,0 @@
-framework module Pods_iOSControls {
-  umbrella header "Pods-iOSControls-umbrella.h"
-
-  export *
-  module * { export * }
-}
