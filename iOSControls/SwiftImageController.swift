@@ -40,10 +40,10 @@ let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
     
     @IBAction func postPhoto(_ sender: AnyObject) {
         
-        let stat:Bool = TLFCustomEvent.sharedInstance().logImage(self.imageView.image)
-        print("Status of log image \(stat)")
+//        let stat:Bool = TLFCustomEvent.sharedInstance().logImage(self.imageView.image)
+//        print("Status of log image \(stat)")
         
-        AppManager.sharedInstance().isImageUploaded = stat
+        //AppManager.sharedInstance().isImageUploaded = stat
     }
 }
 
