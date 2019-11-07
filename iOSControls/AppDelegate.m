@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppManager.h"
+#import  <objc/runtime.h>
 
 @interface AppDelegate ()
 
@@ -15,11 +16,27 @@
 
 @implementation AppDelegate
 
-
+-(void)temporaryFixUpForTextLayoutView
+{
+    if( @available(iOS 13.2, *) )
+    {
+    }
+    else
+    {
+        const char *className = "_UITextLayoutView";
+        Class cls = objc_getClass(className);
+        if (cls == nil)
+        {
+            cls = objc_allocateClassPair([UIView class], className, 0);
+            objc_registerClassPair(cls);
+        }
+    }
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     setenv("EODebug", "1", 1);
     setenv("TLF_DEBUG", "1", 1);
+    [self temporaryFixUpForTextLayoutView];
     [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
     NSString *sessionID=[[TLFApplicationHelper sharedInstance] currentSessionId];
     NSLog(@"TLF Session Id: %@", sessionID);
