@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 8 Schema",
+    "description": "Required key/value pairs for message type 8",
+    "type": "object",
+    "properties": {
+        "offset": {
+            "description": "Offset in milliseconds from start of stream",
+            "type": "integer",
+            "minimum": 0
+        },
+        "screenviewOffset": {
+            "description": "Offset in milliseconds from start of application context",
+            "type": "integer",
+            "minimum": 0
+        },
+        "count": {
+            "description": "Number of messages being sent",
+            "type": "integer",
+            "minimum": 1
+        },
+        "fromWeb": {
+            "description": "Identifies if message is from web or other native application",
+            "type": "boolean"
+        },
+        "type": {
+            "description": "Message header type",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 13
+        },
+        "webStorage": {
+            "type": "object",
+            "properties": {
+                "key": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "key",
+                "value"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "offset",
+        "screenviewOffset",
+        "count",
+        "fromWeb",
+        "type",
+        "webStorage"
+    ],
+    "additionalProperties": false
+}

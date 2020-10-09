@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 7 Schema",
+    "description": "Required key/value pairs for message type 7",
+    "type": "object",
+    "properties": {
+        "offset": {
+            "description": "Offset in milliseconds from start of stream",
+            "type": "integer",
+            "minimum": 0
+        },
+        "screenviewOffset": {
+            "description": "Offset in milliseconds from start of application context",
+            "type": "integer",
+            "minimum": 0
+        },
+        "count": {
+            "description": "Number of messages being sent",
+            "type": "integer",
+            "minimum": 1
+        },
+        "fromWeb": {
+            "description": "Identifies if message is from web or other native application",
+            "type": "boolean"
+        },
+        "type": {
+            "description": "Message header type",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 13
+        },
+        "performance": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": true
+        }
+    },
+    "required": [
+        "offset",
+        "screenviewOffset",
+        "count",
+        "fromWeb",
+        "type",
+        "performance"
+    ],
+    "additionalProperties": false
+}

@@ -67,9 +67,14 @@
     
     //pinch gesture
     UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchWithGestureRecognizer:)];
+    pinchGestureRecognizer.delegate = self;
     [self.pinchView addGestureRecognizer:pinchGestureRecognizer];
 }
-
+//Commentout this code .. This will make GesturesViewController class to have a gesture recognizer delegate; but Not have shouldRecognizeSimultaneouslyWithGestureRecognizer method present. When Tealeaf SDK notices this; it will inject this method for the app, like its in the documentation.
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer;
+//{
+ //  return YES;
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

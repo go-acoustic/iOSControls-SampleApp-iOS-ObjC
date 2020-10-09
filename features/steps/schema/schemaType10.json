@@ -1,0 +1,204 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 10 Schema",
+    "description": "Required key/value pairs for message type 10",
+    "type": "object",
+    "properties": {
+        "offset": {
+            "description": "Offset in milliseconds from start of stream",
+            "type": "integer",
+            "minimum": 0
+        },
+        "version": {
+            "type": "string"
+        },
+        "screenviewOffset": {
+            "description": "Offset in milliseconds from start of application context",
+            "type": "integer",
+            "minimum": 0
+        },
+        "count": {
+            "description": "Number of messages being sent",
+            "type": "integer",
+            "minimum": 1
+        },
+        "fromWeb": {
+            "description": "Identifies if message is from web or other native application",
+            "type": "boolean"
+        },
+        "type": {
+            "description": "Message header type",
+            "type": "integer",
+            "enum": [10]
+        },
+        "orientation": {
+            "type": "integer"
+        },
+        "deviceHeight": {
+            "type": "float"
+        },
+        "deviceWidth": {
+            "type": "float"
+        },
+        "layout": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                 "class": {
+                    "type": "string"
+                },
+                "style": {
+                  "bgColor": {},
+                  "textColor": {},
+                  "paddingTop": {},
+                  "hidden": {},
+                  "textBGColor": {},
+                  "paddingLeft": {},
+                  "paddingBottom": {},
+                  "paddingRight": {}
+                },
+                "controls": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "position": {
+                                "type": "object",
+                                "properties": {
+                                    "x": {
+                                        "type": "integer"
+                                    },
+                                    "y": {
+                                        "type": "integer"
+                                    },
+                                    "height": {
+                                        "type": "integer"
+                                    },
+                                    "width": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "required": [
+                                    "x",
+                                    "y",
+                                    "height",
+                                    "width"
+                                ],
+                                "additionalProperties": false
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "idType": {
+                                 "type": "integer"
+                            },
+                            "type": {
+                                "type": "string"
+                            },
+                            "subType": {
+                                "type": "string"
+                            },
+                            "tlType": {
+                                "type": "string"
+                            },
+                            "currState": {
+                                "type": "object",
+                                "properties": {},
+                                "additionalProperties": true
+                            },
+                            "image": {
+                               "type": "object",
+                               "properties": {
+                                 "base64Image": {
+                                   "type": "string"
+                                 },
+                                 "position": {
+                                   "properties": {
+                                     "x": {
+                                       "type": "integer"
+                                     },
+                                     "y": {
+                                       "type": "integer"
+                                     },
+                                     "height": {
+                                       "type": "integer"
+                                     },
+                                     "width": {
+                                       "type": "integer"
+                                     }
+                                   },
+                                   "required": [
+                                     "x",
+                                     "y",
+                                     "height",
+                                     "width"
+                                   ],
+                                   "additionalProperties": false
+                                 },
+                                 "mimeExtension": {
+                                   "type": "string"
+                                 }
+                               }
+                            },
+                            "style": {
+                                "type": "object",
+                                "properties": {
+                                    "textColor": {},
+                                    "textAlphaColor": {},
+                                    "textBGColor": {},
+                                    "textBGAlphaColor": {},
+                                    "bgColor": {},
+                                    "bgAlphaColor": {},
+                                    "tintColor": {},
+                                    "tintAlpha": {},
+                                    "alphaBGColor": {},
+                                    "isTranslucent": {},
+                                    "tableType": {},
+                                    "paddingTop": {},
+                                    "paddingLeft": {},
+                                    "paddingBottom": {},
+                                    "paddingRight": {},
+                                    "hidden": {},
+                                    "textAlign": {},
+                                    "tableRowStyle": {},
+                                    "tableRowStyleColor": {}
+                                },
+                                "required": [
+                                ],
+                                "additionalProperties": true
+                            }
+                        },
+                        "required": [
+                            "position",
+                            "id",
+                            "type",
+                            "tlType",
+                            "style"
+                        ],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "required": [
+                "name",
+                "controls"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "offset",
+        "screenviewOffset",
+        "count",
+        "fromWeb",
+        "type",
+        "layout",
+        "version",
+        "orientation",
+        "deviceHeight",
+        "deviceWidth"
+    ],
+    "additionalProperties": false
+}

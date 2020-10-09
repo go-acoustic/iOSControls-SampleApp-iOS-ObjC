@@ -45,6 +45,7 @@
                          handler:^(UIAlertAction * action)
                          {
                              [alert dismissViewControllerAnimated:YES completion:nil];
+                             [[TLFCustomEvent sharedInstance] logScreenLayoutWithViewController:self andDelay:50];
                              
                          }];
     UIAlertAction* cancel = [UIAlertAction
@@ -53,7 +54,7 @@
                              handler:^(UIAlertAction * action)
                              {
                                  [alert dismissViewControllerAnimated:YES completion:nil];
-                                 
+                                 [[TLFCustomEvent sharedInstance] logScreenLayoutWithViewController:self andDelay:50];
                              }];
     
     [alert addAction:ok];

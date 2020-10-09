@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 6 Schema",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "integer",
+            "enum": [6]
+        },
+        "offset": {
+            "type": "integer"
+        },
+        "screenviewOffset": {
+            "type": "integer"
+        },
+        "fromWeb": {
+            "type": "boolean"
+        },
+        "count": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "exception": {
+            "type": "object",
+            "required": ["unhandled", "data", "name", "stackTrace", "description"],
+            "properties": {
+                "unhandled": {
+                    "type": "boolean"
+                },
+                "data": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "name": {
+                    "type": "string"
+                },
+                "stackTrace": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": ["type", "offset", "screenviewOffset", "fromWeb", "count", "exception"],
+    "additionalProperties": false
+}

@@ -1,0 +1,126 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Type 1 Schema",
+    "oneOf": [
+        {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "description": "Message header type",
+            	    "type": "integer",
+                    "enum": [1]
+                },
+                "offset": {
+                   	"description": "Offset in milliseconds from start of stream",
+            		"type": "integer",
+            		"minimum": 0
+                },
+                "screenviewOffset": {
+                    "description": "Offset in milliseconds from start of application context",
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "fromWeb": {
+                    "description": "Identifies if message is from web or other native application",
+                    "type": "boolean"
+                },
+                "count": {
+                    "description": "Number of messages being sent",
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "mobileState": {
+                    "type": "object",
+                    "properties": {
+                        "carrier": {
+                            "type": "string"
+                        },
+                        "battery": {
+                             "description": "Battery level from 0 to 100",
+                    		 "type": "double",
+                    		 "minimum": 0,
+                    		 "maximum": 100
+
+                        },
+                        "androidState": {
+                             "description": "Current state in an Android device",
+                             "type": "object",
+                             "properties": {     
+                                 "keyboardState": { 
+                                     "title": "Current keyboard state",
+                                     "type": "string"
+                                     }
+                             },
+                              "required": ["keyboardState"],
+                              "additionalProperties": false
+                        }, 
+                        "freeMemory": {
+                            "type": "integer"
+                        },
+                        "freeStorage": {
+                            "type": "integer"
+                        },
+                        "connectionType": {
+                            "type": "string"
+                        },
+                        "networkReachability": {
+                            "type": "string"
+                        },
+                        "ip": {
+                            "type": "string"
+                        },
+                        "pageOrientation": {
+                            "description": "Current orentation of displaying page",
+                            "type": "number"
+                        },
+                        "orientation": {
+                            "description": "Current orentation of device",
+                            "type": "number"
+                        }                   
+                    },
+                    "required": ["carrier", "pageOrientation", "ip", "networkReachability", "connectionType", "freeMemory", "freeStorage"],
+                    "additionalProperties": false
+                }
+            },
+            "required": ["type", "offset", "screenviewOffset", "fromWeb", "count", "mobileState"],
+            "additionalProperties": false
+        },
+        {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "integer",
+                    "enum": [1]
+                },
+                "offset": {
+                    "type": "integer"
+                },
+                "screenviewOffset": {
+                    "type": "integer"
+                },
+                "fromWeb": {
+                    "type": "boolean"
+                },
+                "count": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "Peggy": {
+                    "type": "object",
+                    "required": ["desklocation", "countryCode"],
+                    "properties": {
+                        "desklocation": {
+                            "type": "string"
+                        },
+                        "countryCode": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "required": ["type", "offset", "screenviewOffset", "fromWeb", "count"],
+            "additionalProperties": false
+        }
+    ]
+}

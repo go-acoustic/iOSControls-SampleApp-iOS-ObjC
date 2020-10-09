@@ -12,6 +12,7 @@ class MyAlertsViewController: UIViewController {
     
     @IBOutlet weak var alertControllerBtnOutlet: UIButton!
     @IBOutlet weak var customAlertBtnOutlet: UIButton!
+    weak var customView: CustomAlertView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,12 @@ class MyAlertsViewController: UIViewController {
         self.customAlertBtnOutlet.layer.cornerRadius = 2
         self.customAlertBtnOutlet.layer.borderWidth = 1
         self.customAlertBtnOutlet.layer.borderColor = UIColor.gray.cgColor
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if let customView = customView {
+            customView.removeFromSuperview()
+        }
     }
     
     @IBAction func defaultAlertBtnTapped(_ sender: Any) {
@@ -47,6 +54,19 @@ class MyAlertsViewController: UIViewController {
         customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         customAlert.delegate = self
         self.present(customAlert, animated: true, completion: nil)
+        
+//        let customViewArr = Bundle.main.loadNibNamed("CustomAlertView", owner: self, options: nil)
+//        if let customView = customViewArr![0] as? CustomAlertView {
+//            customView.frame = CGRect(x: 32, y: self.view.frame.size.height/2, width: self.view.frame.width - 64, height: 150)
+//            customView.delegate = self
+//            self.customView = customView
+//            UIApplication.shared.keyWindow!.addSubview(customView)
+//
+//            UIView.animate(withDuration: 0.4, animations: { () -> Void in
+//                self.view.alpha = 0.6;
+//                TLFCustomEvent.sharedInstance().logScreenLayout(with: self, andDelay: 50)
+//            })
+//        }
     }
     
 }

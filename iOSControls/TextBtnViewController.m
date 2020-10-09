@@ -54,6 +54,7 @@
     NSDictionary *dict = @{ @"CustomEvent Test" : @"testKey1"};
     [[TLFCustomEvent sharedInstance] logEvent:@"calabash-customEvent" values:dict];
 }
+
 - (IBAction)logLocation:(id)sender {
     CLLocationDegrees myLatitude= 37.7888024;
     CLLocationDegrees myLongitude= -122.40031809;

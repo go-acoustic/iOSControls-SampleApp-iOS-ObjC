@@ -8,5 +8,5 @@ rm podfile.lock
 rm -rf "${HOME}/Library/Caches/CocoaPods"
 rm -rf "`pwd`/Pods/"
 pod install
-pod update IBMTealeafDebug
+pod update IBMTealeaf
 ```
