@@ -53,6 +53,7 @@
 {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     cell.textLabel.text = self.data[indexPath.row];
+    cell.accessibilityLabel = self.data[indexPath.row];
     
     if (indexPath.row == 1) {
         cell.tag = 9007;
