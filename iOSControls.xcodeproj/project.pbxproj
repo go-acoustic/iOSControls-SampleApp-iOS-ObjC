@@ -369,11 +369,11 @@
 				TargetAttributes = {
 					F63E3B6C1D5942A10031F013 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = PP64RT7P8Z;
+						DevelopmentTeam = QXQ67VKX2B;
 						LastSwiftMigration = 1010;
 					};
 					F6C4820220C5F64700B0E70D = {
-						DevelopmentTeam = PP64RT7P8Z;
+						DevelopmentTeam = QXQ67VKX2B;
 					};
 				};
 			};
@@ -382,6 +382,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -693,7 +694,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -712,7 +713,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.IBM.iOSControlsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aco.iOSControlsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSControls/iOSControls-Bridging-Header.h";
@@ -731,7 +732,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -750,7 +751,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.IBM.iOSControlsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aco.iOSControlsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSControls/iOSControls-Bridging-Header.h";
@@ -767,7 +768,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSControls-Prefix.pch";
@@ -781,7 +782,7 @@
 				);
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.IBM.internal.iOSControlsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aco.internal.iOSControlsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSControls/iOSControls-Bridging-Header.h";
@@ -798,7 +799,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSControls-Prefix.pch";
@@ -812,7 +813,7 @@
 				);
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.IBM.internal.iOSControlsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aco.internal.iOSControlsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSControls/iOSControls-Bridging-Header.h";
