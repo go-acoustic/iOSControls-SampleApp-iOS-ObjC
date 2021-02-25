@@ -63,11 +63,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  calabash-cucumber (>= 0.19.2, < 2.0)
+  calabash-cucumber (>= 0.20.4, < 2.0)
   json-schema
   plist
   rake
   xcpretty
 
 BUNDLED WITH
-   1.13.3
+   1.17.3
