@@ -433,10 +433,9 @@
 			};
 			buildConfigurationList = F63E3B681D5942A10031F013 /* Build configuration list for PBXProject "iOSControls" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
