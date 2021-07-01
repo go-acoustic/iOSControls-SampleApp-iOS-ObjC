@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F6C4820220C5F64700B0E70D"
+               BlueprintIdentifier = "99107326268E5A45005A1B38"
                BuildableName = "iOSControlsDev.app"
                BlueprintName = "iOSControlsDev"
                ReferencedContainer = "container:iOSControls.xcodeproj">
@@ -27,15 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F6C4820220C5F64700B0E70D"
-            BuildableName = "iOSControlsDev.app"
-            BlueprintName = "iOSControlsDev"
-            ReferencedContainer = "container:iOSControls.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -53,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F6C4820220C5F64700B0E70D"
+            BlueprintIdentifier = "99107326268E5A45005A1B38"
             BuildableName = "iOSControlsDev.app"
             BlueprintName = "iOSControlsDev"
             ReferencedContainer = "container:iOSControls.xcodeproj">
@@ -70,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F6C4820220C5F64700B0E70D"
+            BlueprintIdentifier = "99107326268E5A45005A1B38"
             BuildableName = "iOSControlsDev.app"
             BlueprintName = "iOSControlsDev"
             ReferencedContainer = "container:iOSControls.xcodeproj">
