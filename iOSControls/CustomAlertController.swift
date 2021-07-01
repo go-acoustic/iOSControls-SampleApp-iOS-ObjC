@@ -16,7 +16,7 @@
 
 import UIKit
 
-protocol CustomAlertControllerDelegate: class {
+protocol CustomAlertControllerDelegate: AnyObject {
     func okButtonTapped(selectedOption: String, textFieldValue: String)
     func cancelButtonTapped()
 }

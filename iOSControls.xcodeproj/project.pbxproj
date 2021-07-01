@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		395F2115E44854181451BC23 /* Pods_iOSControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC5A08FFF9E9584C73DA8A6 /* Pods_iOSControls.framework */; };
+		540238321088D10AAEA972DE /* Pods_iOSControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7F1A043D2620FAEB67F774 /* Pods_iOSControls.framework */; };
 		63732A6B2182544500680998 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63732A6A2182544500680998 /* Tealeaf.framework */; };
 		63732A6D218254D200680998 /* EOCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63732A6C218254D200680998 /* EOCore.framework */; };
 		66188D5A1F43EC450077B9FC /* DatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66188D591F43EC450077B9FC /* DatePickerController.m */; };
@@ -87,15 +87,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		115FEEB8D28F00F558011CE0 /* Pods-iOSControls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSControls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSControls/Pods-iOSControls.debug.xcconfig"; sourceTree = "<group>"; };
-		2AAFB754DFBD90A91F8AB54F /* Pods-iOSAutomationTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAutomationTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSAutomationTestApp/Pods-iOSAutomationTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		4D7F1A043D2620FAEB67F774 /* Pods_iOSControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56633995640B81B3779A588B /* Pods-iOSControls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSControls.debug.xcconfig"; path = "Target Support Files/Pods-iOSControls/Pods-iOSControls.debug.xcconfig"; sourceTree = "<group>"; };
 		63732A6A2182544500680998 /* Tealeaf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tealeaf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63732A6C218254D200680998 /* EOCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EOCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66188D511F43EC2B0077B9FC /* DatePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerController.h; sourceTree = "<group>"; };
 		66188D591F43EC450077B9FC /* DatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerController.m; sourceTree = "<group>"; };
-		8FC5A08FFF9E9584C73DA8A6 /* Pods_iOSControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97303FFAD1355A677990DBB0 /* Pods-iOSAutomationTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAutomationTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSAutomationTestApp/Pods-iOSAutomationTestApp.debug.xcconfig"; sourceTree = "<group>"; };
-		E844449DC75BBA21451CB0F6 /* Pods-iOSControls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSControls.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSControls/Pods-iOSControls.release.xcconfig"; sourceTree = "<group>"; };
 		F63E3B6D1D5942A10031F013 /* iOSControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63E3B711D5942A10031F013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F63E3B731D5942A10031F013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +149,7 @@
 		F6C4823B20C5F82A00B0E70D /* libEOCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEOCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C4823D20C5FDB800B0E70D /* TLFResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TLFResources.bundle; path = "../../devgit/iOS-SDK/iOSSrc/Tealeaf/Tealeaf/TLFResources.bundle"; sourceTree = "<group>"; };
 		F6C4823E20C5FDB800B0E70D /* EOCoreSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = EOCoreSettings.bundle; path = "../../devgit/iOS-SDK/iOSSrc/EOCore/EOCore/EOCoreSettings.bundle"; sourceTree = "<group>"; };
+		FEFC920A6C68F7139A2A275E /* Pods-iOSControls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSControls.release.xcconfig"; path = "Target Support Files/Pods-iOSControls/Pods-iOSControls.release.xcconfig"; sourceTree = "<group>"; };
 		e1389741609dfa772142c04e /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -167,7 +165,7 @@
 				F64DE3C81D5BAF4F00C73886 /* CoreTelephony.framework in Frameworks */,
 				F64DE3C61D5BAF4000C73886 /* UIKit.framework in Frameworks */,
 				F64DE3C31D5BAF2300C73886 /* Foundation.framework in Frameworks */,
-				395F2115E44854181451BC23 /* Pods_iOSControls.framework in Frameworks */,
+				540238321088D10AAEA972DE /* Pods_iOSControls.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,17 +188,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E86D56416B4F086AAE3CA42 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				97303FFAD1355A677990DBB0 /* Pods-iOSAutomationTestApp.debug.xcconfig */,
-				2AAFB754DFBD90A91F8AB54F /* Pods-iOSAutomationTestApp.release.xcconfig */,
-				115FEEB8D28F00F558011CE0 /* Pods-iOSControls.debug.xcconfig */,
-				E844449DC75BBA21451CB0F6 /* Pods-iOSControls.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		F63E3B641D5942A10031F013 = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +196,7 @@
 				F64DE3D11D5BAF9500C73886 /* Frameworks */,
 				F63E3B6F1D5942A10031F013 /* iOSControls */,
 				F63E3B6E1D5942A10031F013 /* Products */,
-				6E86D56416B4F086AAE3CA42 /* Pods */,
+				F96BF1D5F8A7ECB9034943AA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,9 +300,18 @@
 				F64DE3C51D5BAF4000C73886 /* UIKit.framework */,
 				F64DE3C21D5BAF2300C73886 /* Foundation.framework */,
 				e1389741609dfa772142c04e /* CFNetwork.framework */,
-				8FC5A08FFF9E9584C73DA8A6 /* Pods_iOSControls.framework */,
+				4D7F1A043D2620FAEB67F774 /* Pods_iOSControls.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F96BF1D5F8A7ECB9034943AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56633995640B81B3779A588B /* Pods-iOSControls.debug.xcconfig */,
+				FEFC920A6C68F7139A2A275E /* Pods-iOSControls.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,12 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F63E3B841D5942A10031F013 /* Build configuration list for PBXNativeTarget "iOSControls" */;
 			buildPhases = (
-				A0DA44A30D112E0194ADE33B /* [CP] Check Pods Manifest.lock */,
+				261EFA23C0CCA79B91E2C36D /* [CP] Check Pods Manifest.lock */,
 				F63E3B691D5942A10031F013 /* Sources */,
 				F63E3B6A1D5942A10031F013 /* Frameworks */,
 				F63E3B6B1D5942A10031F013 /* Resources */,
-				255EFDB54E7191DBC5E0C7A8 /* [CP] Embed Pods Frameworks */,
-				08684EA9CB7B21AB35DCCAA5 /* [CP] Copy Pods Resources */,
+				09FB832C0BFAB9F2D4975EA8 /* [CP] Embed Pods Frameworks */,
+				075380928473EE1C151B6D46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,13 +360,13 @@
 		F63E3B651D5942A10031F013 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = CanNMobile;
 				TargetAttributes = {
 					F63E3B6C1D5942A10031F013 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = QXQ67VKX2B;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1250;
 					};
 					F6C4820220C5F64700B0E70D = {
 						DevelopmentTeam = QXQ67VKX2B;
@@ -441,15 +437,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08684EA9CB7B21AB35DCCAA5 /* [CP] Copy Pods Resources */ = {
+		075380928473EE1C151B6D46 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSControls/Pods-iOSControls-resources.sh",
-				"${PODS_ROOT}/EOCore/SDKs/iOS/Release/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Release/Tealeaf.framework/TLFResources.bundle",
+				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCoreSettings.bundle",
+				"${PODS_ROOT}/TealeafDebug/SDKs/iOS/Debug/TLFResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -461,15 +457,15 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSControls/Pods-iOSControls-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		255EFDB54E7191DBC5E0C7A8 /* [CP] Embed Pods Frameworks */ = {
+		09FB832C0BFAB9F2D4975EA8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSControls/Pods-iOSControls-frameworks.sh",
-				"${PODS_ROOT}/EOCore/SDKs/iOS/Release/EOCore.framework",
-				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Release/Tealeaf.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/EOCore/EOCore.framework/EOCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Tealeaf/Tealeaf.framework/Tealeaf",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -481,16 +477,20 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSControls/Pods-iOSControls-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0DA44A30D112E0194ADE33B /* [CP] Check Pods Manifest.lock */ = {
+		261EFA23C0CCA79B91E2C36D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-iOSControls-checkManifestLockResult.txt",
 			);
@@ -576,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -595,6 +596,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -622,7 +624,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -635,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -654,6 +657,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -675,7 +679,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -687,7 +691,7 @@
 		};
 		F63E3B851D5942A10031F013 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 115FEEB8D28F00F558011CE0 /* Pods-iOSControls.debug.xcconfig */;
+			baseConfigurationReference = 56633995640B81B3779A588B /* Pods-iOSControls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -701,9 +705,9 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSControls-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSControls/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -719,13 +723,13 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSControls/iOSControls-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		F63E3B861D5942A10031F013 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E844449DC75BBA21451CB0F6 /* Pods-iOSControls.release.xcconfig */;
+			baseConfigurationReference = FEFC920A6C68F7139A2A275E /* Pods-iOSControls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -739,9 +743,9 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSControls-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSControls/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -756,7 +760,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOSControls/iOSControls-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -774,7 +778,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSControls-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSControls/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -805,7 +809,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSControls-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSControls/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
