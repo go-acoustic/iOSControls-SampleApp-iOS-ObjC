@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Tealeaf",
+        "repositoryURL": "https://github.com/acoustic-analytics/TealeafDebug-SP",
+        "state": {
+          "branch": "master",
+          "revision": "6d1785e0db6fc8ac98e3e8efd56f3be1cc495c35",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

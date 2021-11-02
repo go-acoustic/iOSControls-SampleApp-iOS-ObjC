@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AA34FF7EC3D86F8DF2FA3ED /* Pods_iOSControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE33F8774538AA4B574C08B /* Pods_iOSControls.framework */; };
 		66188D5A1F43EC450077B9FC /* DatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66188D591F43EC450077B9FC /* DatePickerController.m */; };
 		99107329268E5A45005A1B38 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677268F215C3EAF00C45E0C /* CustomAlertView.swift */; };
 		9910732A268E5A45005A1B38 /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C2E8520B497D500164D78 /* CustomAlertController.swift */; };
@@ -46,6 +45,7 @@
 		9910734E268E5A45005A1B38 /* ChestDrawer.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8661DCA928100E039A6 /* ChestDrawer.png */; };
 		9910734F268E5A45005A1B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63E3B791D5942A10031F013 /* Main.storyboard */; };
 		9910738A268E5C45005A1B38 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9910736B268E5BDE005A1B38 /* Tealeaf.framework */; };
+		99E565332730C8EB00A1E565 /* Tealeaf in Frameworks */ = {isa = PBXBuildFile; productRef = 99E565322730C8EB00A1E565 /* Tealeaf */; };
 		F63E3B721D5942A10031F013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F63E3B711D5942A10031F013 /* main.m */; };
 		F63E3B751D5942A10031F013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F63E3B741D5942A10031F013 /* AppDelegate.m */; };
 		F63E3B7B1D5942A10031F013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63E3B791D5942A10031F013 /* Main.storyboard */; };
@@ -143,13 +143,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		133F1E8C2473080E898BD901 /* Pods-iOSControls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSControls.release.xcconfig"; path = "Target Support Files/Pods-iOSControls/Pods-iOSControls.release.xcconfig"; sourceTree = "<group>"; };
 		66188D511F43EC2B0077B9FC /* DatePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerController.h; sourceTree = "<group>"; };
 		66188D591F43EC450077B9FC /* DatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerController.m; sourceTree = "<group>"; };
 		99107355268E5A45005A1B38 /* iOSControlsDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSControlsDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99107357268E5BDE005A1B38 /* Tealeaf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tealeaf.xcodeproj; path = "../iOS-SDK/iOSSrc/Tealeaf/Tealeaf.xcodeproj"; sourceTree = "<group>"; };
-		9BE33F8774538AA4B574C08B /* Pods_iOSControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C8ABEBB4EEBA12A72181BC /* Pods-iOSControls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSControls.debug.xcconfig"; path = "Target Support Files/Pods-iOSControls/Pods-iOSControls.debug.xcconfig"; sourceTree = "<group>"; };
 		F63E3B6D1D5942A10031F013 /* iOSControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63E3B711D5942A10031F013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F63E3B731D5942A10031F013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -223,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E565332730C8EB00A1E565 /* Tealeaf in Frameworks */,
 				F64DE3D01D5BAF7E00C73886 /* WebKit.framework in Frameworks */,
 				F64DE3CE1D5BAF7300C73886 /* libz.tbd in Frameworks */,
 				F64DE3CC1D5BAF6100C73886 /* CoreLocation.framework in Frameworks */,
@@ -230,7 +228,6 @@
 				F64DE3C81D5BAF4F00C73886 /* CoreTelephony.framework in Frameworks */,
 				F64DE3C61D5BAF4000C73886 /* UIKit.framework in Frameworks */,
 				F64DE3C31D5BAF2300C73886 /* Foundation.framework in Frameworks */,
-				0AA34FF7EC3D86F8DF2FA3ED /* Pods_iOSControls.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +255,6 @@
 				F64DE3D11D5BAF9500C73886 /* Frameworks */,
 				F63E3B6F1D5942A10031F013 /* iOSControls */,
 				F63E3B6E1D5942A10031F013 /* Products */,
-				F96BF1D5F8A7ECB9034943AA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -358,18 +354,8 @@
 				F64DE3C51D5BAF4000C73886 /* UIKit.framework */,
 				F64DE3C21D5BAF2300C73886 /* Foundation.framework */,
 				e1389741609dfa772142c04e /* CFNetwork.framework */,
-				9BE33F8774538AA4B574C08B /* Pods_iOSControls.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F96BF1D5F8A7ECB9034943AA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B6C8ABEBB4EEBA12A72181BC /* Pods-iOSControls.debug.xcconfig */,
-				133F1E8C2473080E898BD901 /* Pods-iOSControls.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,18 +382,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F63E3B841D5942A10031F013 /* Build configuration list for PBXNativeTarget "iOSControls" */;
 			buildPhases = (
-				5ECD42EB41FFB8BD27B610DC /* [CP] Check Pods Manifest.lock */,
 				F63E3B691D5942A10031F013 /* Sources */,
 				F63E3B6A1D5942A10031F013 /* Frameworks */,
 				F63E3B6B1D5942A10031F013 /* Resources */,
-				E134E851A2A8B4362A16A638 /* [CP] Embed Pods Frameworks */,
-				BC8307CD2F0590453F17D444 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iOSControls;
+			packageProductDependencies = (
+				99E565322730C8EB00A1E565 /* Tealeaf */,
+			);
 			productName = iOSAutomationTestApp;
 			productReference = F63E3B6D1D5942A10031F013 /* iOSControls.app */;
 			productType = "com.apple.product-type.application";
@@ -440,6 +426,9 @@
 				Base,
 			);
 			mainGroup = F63E3B641D5942A10031F013;
+			packageReferences = (
+				99E565312730C8EB00A1E565 /* XCRemoteSwiftPackageReference "TealeafDebug-SP" */,
+			);
 			productRefGroup = F63E3B6E1D5942A10031F013 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -556,71 +545,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5ECD42EB41FFB8BD27B610DC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iOSControls-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC8307CD2F0590453F17D444 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSControls/Pods-iOSControls-resources.sh",
-				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCoreSettings.bundle",
-				"${PODS_ROOT}/TealeafDebug/SDKs/iOS/Debug/TLFResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EOCoreSettings.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLFResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSControls/Pods-iOSControls-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E134E851A2A8B4362A16A638 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSControls/Pods-iOSControls-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/EOCore/EOCore.framework/EOCore",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Tealeaf/Tealeaf.framework/Tealeaf",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EOCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tealeaf.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSControls/Pods-iOSControls-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		99107328268E5A45005A1B38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -710,7 +634,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSControls/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -747,7 +674,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSControls/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -876,7 +806,8 @@
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -884,7 +815,6 @@
 		};
 		F63E3B851D5942A10031F013 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C8ABEBB4EEBA12A72181BC /* Pods-iOSControls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -901,7 +831,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSControls/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -922,7 +855,6 @@
 		};
 		F63E3B861D5942A10031F013 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 133F1E8C2473080E898BD901 /* Pods-iOSControls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -939,7 +871,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/iOSControls/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -988,6 +923,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99E565312730C8EB00A1E565 /* XCRemoteSwiftPackageReference "TealeafDebug-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/acoustic-analytics/TealeafDebug-SP";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99E565322730C8EB00A1E565 /* Tealeaf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99E565312730C8EB00A1E565 /* XCRemoteSwiftPackageReference "TealeafDebug-SP" */;
+			productName = Tealeaf;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F63E3B651D5942A10031F013 /* Project object */;
 }
