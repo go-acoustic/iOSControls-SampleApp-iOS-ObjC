@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "Tealeaf",
-        "repositoryURL": "https://github.com/acoustic-analytics/TealeafDebug-SP",
+        "repositoryURL": "https://github.com/go-acoustic/TealeafDebug-SP",
         "state": {
           "branch": "master",
           "revision": "17c7f7e5993d700d0da12390c62a67e5299c18d4",
